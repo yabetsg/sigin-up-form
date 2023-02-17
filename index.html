@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <aside class="side-background">
-        <div class="logo">
-        <img src="odin-logo.png" alt="LOGO">ODIN</div>
-        <!-- <img src="./background.jpg" alt="background image"> -->
-      </aside>
 
-      <div class="content">
-        <section class="paragraph-section">
-          <h2>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. <br> Sign up
-            now to get started.
-            <h2>You know you want to.</h2>
-          </h2>
-        </section>
-        <section class="form-section">
-          <header><h2>Let's do this!</h2></header>
-          <form action="#" method="get">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/liberation-mono" type="text/css"/>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="side-background">
+      <div class="logo">
+        <img src="odin-logo.png" alt="LOGO">ODIN
+      </div>
+      <!-- <img src="./background.jpg" alt="background image"> -->
+    </aside>
+
+    <div class="content">
+      <section class="paragraph-section">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br> Sign up
+          now to get started.
+          <h2>You know you want to.</h2>
+        </h2>
+      </section>
+      <section class="form-section">
+        <header>
+          <h2>Let's do this!</h2>
+        </header>
+        <div class="test">
+          <form id="form" action="#" method="get">
             <div class="form-separator1">
               <div>
                 <div>
                   <label for="firstname">FIRST NAME</label>
+
                 </div>
 
-                <input type="text" name="firstname" id="firstname" />
+                <input type="text" name="firstname" id="firstname" required />
+                <div class="firstname-error"></div>
               </div>
               <div>
                 <div>
                   <label for="email">EMAIL</label>
                 </div>
 
-                <input type="email" name="email" id="email" />
+                <input type="text" name="email" id="email" required />
+                <div class="email-error"></div>
               </div>
               <div>
                 <div>
                   <label for="password">PASSWORD</label>
                 </div>
-
-                <input type="password" name="password" id="password" maxlength="5"/>
+                <input type="password" name="password" id="password" required />
+                <div class="password-error"></div>
               </div>
+
             </div>
             <div class="form-separator2">
               <div>
                 <div>
                   <label for="lastname">LAST NAME</label>
                 </div>
-                <input type="text" name="lastname" id="lastname" />
+                <input type="text" name="lastname" id="lastname" required />
+                <div class="lastname-error"></div>
               </div>
               <div>
                 <div>
                   <label for="phone-number">PHONE NUMBER</label>
                 </div>
-                <input type="number" name="number" id="phone-number" />
+                <input type="number" name="number" id="phone-number" required />
+                <div class="phoneNumber-error"></div>
               </div>
               <div>
                 <div>
                   <label for="confirm-password">CONFIRM PASSWORD</label>
                 </div>
-                <input type="password" name="password" id="confirm-password" />
+                <input type="password" name="password" id="confirm-password" required />
+                <div class="confirm-error"></div>
               </div>
-              <div>
-                <button type="submit">dff</button>
-              </div>
+
             </div>
-            
-          </form>
-        </section>
-        <footer>
-         <button class="submit" type="submit">Create Account</button>
-          
-          <div class="footer-text">Already have an account?<a href="#">  Log in</a></span></div>
-        </footer>
-      </div>
+        </div>
+        <div class="submit-div">
+          <button class="submit" type="submit">Create Account</button>
+        </div>
+        </form>
+
+      </section>
+      <footer>
+
+
+        <div class="footer-text">Already have an account?<a href="#"> Log in</a></span></div>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
